@@ -15,4 +15,11 @@ $(document).ready(function() {
     if (user) {
         $("#user").text("Welcome, " + user);
     }
+
+        $("#overview-link").click(function(e) {
+            e.preventDefault();
+      
+            $("#main-table").toggle();
+            $("#overview-table").toggle();
+          });
 });
